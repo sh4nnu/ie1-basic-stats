@@ -52,4 +52,7 @@ public class MinMaxCalculation {
                 max = current;
             }
         }
+        return max;
+
+    }
 }
