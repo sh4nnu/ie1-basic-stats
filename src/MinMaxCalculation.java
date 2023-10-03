@@ -35,5 +35,21 @@ public class MinMaxCalculation {
 
         return min;
     }
+    /**
+     * Finds the maximum value in the ArrayList.
+     *
+     * @return The maximum value in the ArrayList.
+     */
+    public int findMax() {
+        if (numbers.isEmpty()) {
+            throw new IllegalArgumentException("ArrayList is empty. Cannot find maximum.");
+        }
 
+        int max = numbers.get(0);
+        for (int i = 1; i < numbers.size(); i++) {
+            int current = numbers.get(i);
+            if (current > max) {
+                max = current;
+            }
+        }
 }
